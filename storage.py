@@ -1,4 +1,4 @@
-# Feature: Добавлена проверка дубликатов книг
+# Features: Добавлена проверка дубликатов книг
 # BRANCH: feature/storage
 import json
 import os
@@ -37,10 +37,7 @@ class BookStorage:
         return [Book.from_dict(book) for book in books_data]
     
     def add_book(self, book: Book) -> bool:
-        """
-        Добавляет книгу в хранилище
-        Returns True если книга добавлена, False если дубликат
-        """
+        """Добавляет книгу в хранилище"""
         books = self.get_all_books()
         
         # Проверка на дубликаты
