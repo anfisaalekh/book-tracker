@@ -1,3 +1,4 @@
+# Feature: Добавлена проверка дубликатов книг
 # BRANCH: feature/storage
 import json
 import os
